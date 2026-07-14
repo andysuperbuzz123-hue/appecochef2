@@ -1,0 +1,24 @@
+body { 
+    font-family: 'Poppins', sans-serif; 
+    background: linear-gradient(135deg, #e0f2f1, #c8e6c9); 
+    display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; 
+}
+.container { 
+    width: 90%; max-width: 450px; background: white; padding: 30px; 
+    border-radius: 25px; box-shadow: 0 20px 40px rgba(0,0,0,0.15); 
+    text-align: center; transition: 0.3s;
+}
+h1 { color: #2e7d32; margin-bottom: 10px; font-size: 1.8rem; }
+input { margin: 20px 0; width: 100%; padding: 10px; border: 2px dashed #4CAF50; border-radius: 10px; }
+button { 
+    width: 100%; background: #4CAF50; color: white; padding: 16px; 
+    border: none; border-radius: 50px; cursor: pointer; font-size: 18px; 
+    font-weight: bold; transition: 0.4s; box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+}
+button:hover { transform: translateY(-3px); background: #388e3c; box-shadow: 0 8px 20px rgba(76, 175, 80, 0.5); }
+#receta-box { 
+    margin-top: 25px; text-align: left; padding: 20px; background: #f9f9f9; 
+    border-radius: 15px; border-left: 6px solid #4CAF50; color: #333; line-height: 1.7;
+    animation: fadeIn 0.5s ease-in;
+}
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }

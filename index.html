@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoChef 360 IA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="container">
+        <h1>EcoChef 360 IA 🍎</h1>
+        <p>Escanea o sube la foto de tu ingrediente:</p>
+        <input type="file" id="fileInput" accept="image/*">
+        <div id="preview-container">
+            <img id="preview" style="display:none; max-width:100%; border-radius:10px; margin-bottom: 15px;">
+        </div>
+        <button id="snap">📸 Analizar ingrediente</button>
+        <div id="receta-box">Aquí verás los consejos de la IA...</div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        }
+    </script>
+</body>
+</html>
