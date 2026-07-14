@@ -5,7 +5,7 @@ const output = document.getElementById('receta-box');
 
 // IMPORTANTE: Inserta tu NUEVA API KEY aquí.
 // No subas esto a un repositorio público con la clave.
-const API_KEY = 'AQ.Ab8RN6L6PJ2rblG0bHw46-QJMidbVOQCAeQA4rt4k9BGUudz6Q'; 
+const API_KEY = 'AQ.Ab8RN6J96CfAnWZIrrds1OtF9DpW7gKTgHY46EDZ3ZIV7aSAyg'; 
 
 fileInput.addEventListener('change', (e) => {
     const file = e.target.files[0];
